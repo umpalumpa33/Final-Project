@@ -156,7 +156,7 @@ header {
     align-items: flex-start;
 }
 
-.main_left_side p{
+#welcome_text{
     color: #355EFC;
     text-align: left;
     font-family: 'Poppins';
@@ -167,6 +167,25 @@ header {
     padding: 0.625rem;
     border-radius: 0.5rem;
     border: 1px solid #FFF;
+}
+
+#modal {
+    display: none;
+    position: absolute;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    max-width: 50vw;
+    align-self: stretch;
+    color: #555;
+    font-family: "Poppins";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2rem;
+    padding: 2vw;
+    border-radius: 15px;
 }
 
 

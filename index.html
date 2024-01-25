@@ -15,6 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+    <script src="Javascript File/script.js"></script>
 </head>
 <body>
     <header>
@@ -61,16 +62,23 @@
             </div>
         </div>
         <div class="header_main_content">
-            <button id="left_arrow"><img src="images/left_arrow.png" alt="Left Arrow Image"></button>
+            <button id="left_arrow"><img src="images/left_arrow.png" onclick="changeImage(-1)" alt="Left Arrow Image"></button>
             <div class="main_left_side">
                 <p id="welcome_text">Welcome to Finanza</p>
                 <h1>Your Financial Status Is Our Goal</h1>
-                <button id="header_btn">explore more</button>
+                <button id="header_btn" onclick="toggleModal()">explore more</button>
+                <p id="modal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae mollis turpis.
+                Vivamus bibendum lacus turpis, vitae molestie sapien facilisis sit amet. 
+                Pellentesque consequat nunc ac tortor tincidunt sagittis.
+                Integer mollis nisi nec felis semper facilisis. Fusce a rutrum lectus, quis vestibulum erat. 
+                Sed ligula nisl, accumsan vitae orci et, facilisis condimentum dui. 
+                Aliquam ornare, lectus ut euismod molestie, ligula lorem scelerisque eros, 
+                ut pretium arcu ligula et nunc. </p>
             </div>
             <div class="right_image">
-                <img src="images/slider-image-card.png" id="slider_img" alt="Slider Image Card">
+                <img src="images/slider_first_image.png" id="slider_img" alt="Slider Image Card">
             </div>
-            <button id="right_arrow"><img src="images/right_arrow.png" alt="Right Arrow Image"></button>
+            <button id="right_arrow"><img src="images/right_arrow.png" onclick="changeImage(1)" alt="Right Arrow Image"></button>
         </div>
     </header>
     <main>
@@ -86,9 +94,24 @@
                 </div>
                 <div class="active_paragraphs">
                     <div class="active_buttons">
-                        <button id="story_button">Story</button>
-                        <button id="mission_button">Mission</button>
-                        <button id="vission_button">Vission</button>
+                        <button id="story" class="nav-button active" onclick="setActive('story')">Story</button>
+                        <button id="mission" class="nav-button" onclick="setActive('mission')">Mission</button>
+                        <button id="vission" class="nav-button" onclick="setActive('vission')">Vission</button>
+                        <p class="story-content content">Tempor erat elitr rebum at clita.
+                        Diam dolor diam ipsum et tempor sit.
+                        Aliqu diam amet diam et eos labore. 
+                        <br>
+                        <br>
+                        Diam dolor diam ipsum et tempor sit.
+                        liqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit</p>
+                        <p class="mission-content content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae mollis turpis.
+                            <br>
+                            <br>
+                        Vivamus bibendum lacus turpis, vitae molestie sapien facilisis sit amet. Pellentesque consequat nunc ac tortor tincidunt sagittis.</p>
+                        <p class="vission-content content">Integer mollis nisi nec felis semper facilisis. Fusce a rutrum lectus, quis vestibulum erat. Sed ligula nisl, accumsan vitae orci et, facilisis condimentum dui.
+                            <br>
+                            <br>
+                            Aliquam ornare, lectus ut euismod molestie, ligula lorem scelerisque eros, ut pretium arcu ligula et nunc..</p>
                     </div>
                 </div>
             </div>
