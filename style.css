@@ -15,20 +15,24 @@ header {
 }
 
 .header_top_info {
-    margin-top: 1%;
+    margin-top: 2vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 .header_top_info p {
     font-family: 'Open Sans', sans-serif;
     color: #355EFC;
-    font-size: 0.875rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    display: flex;
+    width: 9.3125rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    flex-shrink: 0;
+    align-self: stretch;
 }
 
 .header_top_info img {
@@ -37,15 +41,19 @@ header {
 }
 
 
-
 #email_icon {
     height: 19px;
 }
+
+/* .right_info {
+    width: 19.4vw;
+} */
 
 .left_info, .right_info {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    max-width: 23vw;
 }
 
 .header_location, .header_time, .header_email, .header_phone {
@@ -76,8 +84,10 @@ header {
 .navigation {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     text-align: center;
+    align-items: center;
+    width: 49vw;
 }
 
 #name_of_company {
@@ -86,12 +96,37 @@ header {
     font-family: Jost;
     font-size: 3rem;
     font-style: normal;
-    font-weight: 700;
     line-height: 120.833%; 
 }
 
 .navigation a {
+    color: #355EFC;
+    font-family: Poppins;
+    font-weight: 700;
     text-decoration: none;
-    color: rgba(53, 94, 252, 1);
-    font-weight: bold;
+}
+
+#arrow{
+    max-width: 0.875rem;
+    max-height: 0.5rem;
+}
+
+.a_links {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    width: 54vw;
+}
+
+.social_media {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.social_media img {
+    background-color: rgba(228, 232, 253, 1);
+    padding: 0.5rem;
+    border: 1px solid rgba(228, 232, 253, 1);
+    border-radius: 50%;
+    box-sizing: border-box;
 }
