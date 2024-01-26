@@ -10,7 +10,8 @@ body {
     margin: 0 auto;
     background-image: url("/FinalProject/images/header_background.png");
     background-repeat: no-repeat;
-    overflow-x: hidden;
+  overflow-x: hidden;
+
 }
 
 header {

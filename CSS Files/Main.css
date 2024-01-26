@@ -104,7 +104,7 @@ main {
     font-size: 1rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 1.5rem; /* 150% */
+    line-height: 1.5rem;
     margin-top: 2vh;
 }
 
@@ -117,13 +117,14 @@ main {
   padding: 1.25rem;
   gap: 1.25rem;
   justify-content: space-between;
+  margin-top: 2vh;
 }
 
 .service_items h3 {
   color: #011A41;
   font-family: Jost;
   font-size: 1.5rem;
-  font-style: normal;
+  font-style: bold;
   font-weight: 500;
   line-height: 1.8125rem
 }
@@ -140,13 +141,73 @@ main {
 .first_item, .second_item, .third_item {
   display: flex;
   flex-direction: row;
+  width: 33.3%;
+}
+
+.first_item, .second_item {
+  border-right: 1px solid #909DE2;
 }
 
 .item_content {
   margin-left: 0.6rem;
+  max-width: 16rem;
 }
 
 .item_content p {
   margin-top: 1rem;
 }
 
+
+.statistics {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  display: flex;
+  padding: 1.875rem;
+  align-items: center;
+  gap: 0.3125rem;
+  justify-content: space-between;
+  text-align: center;
+  background-color: #355EFC;
+  flex-shrink: 0;
+  margin-top: 6vh;
+  width: 100vw;
+  margin-left: calc(-7%);
+}
+
+.statistics img {
+  max-width: 3rem;
+}
+
+.happy_clients, .projects_completed, .dedicated_staff, .dedicated_staff_2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 0 0;
+  gap: 0.75rem;
+}
+
+.statistics p {
+  color: #FFF;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem; /* 150% */
+  align-self: stretch;
+}
+
+.statistics h1 {
+  color: #FFF;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 4.1875rem; /* 119.643% */
+}
+
+.statistics hr {
+  width: 23%;
+}
