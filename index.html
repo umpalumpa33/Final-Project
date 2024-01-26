@@ -1,122 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Final Project</title>
-    <link rel="stylesheet" href="CSS Files/Header.css" alt="Header CSS">
-    <link rel="stylesheet" href="CSS Files/Main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS Files/Header.css" alt="Header CSS" />
+    <link rel="stylesheet" href="CSS Files/Main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost&display=swap"
+      rel="stylesheet"
+    />
     <script src="Javascript File/script.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="header_top_info">
-            <div class="left_info">
-                <div class="header_location">
-                    <img src="images/location_img.png" alt="Location Icon">
-                    <p>123 Street, New York, USA</p>
-                </div>
-                <div class="header_time">
-                    <img src="images/time_img.png" alt="Clock Icon">
-                    <p>9.00 am - 9.00 pm</p>
-                </div>
-            </div>
-            <div class="right_info">
-                <div class="header_email">
-                    <img src="images/email_img.png" id="email_icon" alt="Email Icon">
-                    <p>info@example.com</p>
-                </div>
-                <div class="header_phone">
-                    <img src="images/phone_img.png" alt="Phone Icon">
-                    <p>+012 345 6789</p>
-                </div>
-            </div>
+      <div class="header_top_info">
+        <div class="left_info">
+          <div class="header_location">
+            <img src="images/location_img.png" alt="Location Icon" />
+            <p>123 Street, New York, USA</p>
+          </div>
+          <div class="header_time">
+            <img src="images/time_img.png" alt="Clock Icon" />
+            <p>9.00 am - 9.00 pm</p>
+          </div>
         </div>
-        <div class="header_navigation">
-            <h1 id="name_of_company">Finanza</h1>
-            <div class="navigation">
-                <div class="a_links">
-                    <a href="">Home</a>
-                    <a href="">About</a>
-                    <a href="">Services</a>
-                    <div class="pages_list">
-                        <a href="">Pages</a>
-                        <img src="images/arrow_img.png" id="arrow" alt="Arrow Image">
-                    </div>
-                    <a href="">Contact</a>
-                </div> 
-                <div class="social_media">
-                    <img src="images/facebook_logo.png" alt="Facebook Logo">
-                    <img src="images/twitter_logo.png" alt="Twitter Logo">
-                    <img src="images/linkedin_logo.png" alt="Linkedin Logo">
-                </div>
-            </div>
+        <div class="right_info">
+          <div class="header_email">
+            <img src="images/email_img.png" id="email_icon" alt="Email Icon" />
+            <p>info@example.com</p>
+          </div>
+          <div class="header_phone">
+            <img src="images/phone_img.png" alt="Phone Icon" />
+            <p>+012 345 6789</p>
+          </div>
         </div>
-        <div class="header_main_content">
-            <button id="left_arrow"><img src="images/left_arrow.png" onclick="changeImage(-1)" alt="Left Arrow Image"></button>
-            <div class="main_left_side">
-                <p id="welcome_text">Welcome to Finanza</p>
-                <h1>Your Financial Status Is Our Goal</h1>
-                <button id="header_btn" onclick="toggleModal()">explore more</button>
-                <p id="modal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae mollis turpis.
-                Vivamus bibendum lacus turpis, vitae molestie sapien facilisis sit amet. 
-                Pellentesque consequat nunc ac tortor tincidunt sagittis.
-                Integer mollis nisi nec felis semper facilisis. Fusce a rutrum lectus, quis vestibulum erat. 
-                Sed ligula nisl, accumsan vitae orci et, facilisis condimentum dui. 
-                Aliquam ornare, lectus ut euismod molestie, ligula lorem scelerisque eros, 
-                ut pretium arcu ligula et nunc. </p>
+      </div>
+      <div class="header_navigation">
+        <h1 id="name_of_company">Finanza</h1>
+        <div class="navigation">
+          <div class="a_links">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Services</a>
+            <div class="pages_list">
+              <a href="">Pages</a>
+              <img src="images/arrow_img.png" id="arrow" alt="Arrow Image" />
             </div>
-            <div class="right_image">
-                <img src="images/slider_first_image.png" id="slider_img" alt="Slider Image Card">
-            </div>
-            <button id="right_arrow"><img src="images/right_arrow.png" onclick="changeImage(1)" alt="Right Arrow Image"></button>
+            <a href="">Contact</a>
+          </div>
+          <div class="social_media">
+            <img src="images/facebook_logo.png" alt="Facebook Logo" />
+            <img src="images/twitter_logo.png" alt="Twitter Logo" />
+            <img src="images/linkedin_logo.png" alt="Linkedin Logo" />
+          </div>
         </div>
+      </div>
+      <div class="header_main_content">
+        <button id="left_arrow">
+          <img
+            src="images/left_arrow.png"
+            onclick="changeImage(-1)"
+            alt="Left Arrow Image"
+          />
+        </button>
+        <div class="main_left_side">
+          <p id="welcome_text">Welcome to Finanza</p>
+          <h1>Your Financial Status Is Our Goal</h1>
+          <button id="header_btn" onclick="toggleModal()">explore more</button>
+          <p id="modal">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+            vitae mollis turpis. Vivamus bibendum lacus turpis, vitae molestie
+            sapien facilisis sit amet. Pellentesque consequat nunc ac tortor
+            tincidunt sagittis. Integer mollis nisi nec felis semper facilisis.
+            Fusce a rutrum lectus, quis vestibulum erat. Sed ligula nisl,
+            accumsan vitae orci et, facilisis condimentum dui. Aliquam ornare,
+            lectus ut euismod molestie, ligula lorem scelerisque eros, ut
+            pretium arcu ligula et nunc.
+          </p>
+        </div>
+        <div class="right_image">
+          <img
+            src="images/slider_first_image.png"
+            id="slider_img"
+            alt="Slider Image Card"
+          />
+        </div>
+        <button id="right_arrow">
+          <img
+            src="images/right_arrow.png"
+            onclick="changeImage(1)"
+            alt="Right Arrow Image"
+          />
+        </button>
+      </div>
     </header>
     <main>
-        <div class="about_content">
-            <img src="images/main_image_card.png" alt="Main Page Card" id="main_page_img">
-            <div class="about_info">
-                <div class="about_paragraph">
-                    <p id="about_us_txt">About Us</p>
-                    <h1>We Help Our Clients To Grow Their Business</h1>
-                    <p id="about_main_txt">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
-                    Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit,
-                    sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                </div>
-                <div class="active_paragraphs">
-                    <div class="active_buttons">
-                        <button id="story" class="nav-button active" onclick="setActive('story')">Story</button>
-                        <button id="mission" class="nav-button" onclick="setActive('mission')">Mission</button>
-                        <button id="vission" class="nav-button" onclick="setActive('vission')">Vission</button>
-                        <p class="story-content content">Tempor erat elitr rebum at clita.
-                        Diam dolor diam ipsum et tempor sit.
-                        Aliqu diam amet diam et eos labore. 
-                        <br>
-                        <br>
-                        Diam dolor diam ipsum et tempor sit.
-                        liqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit</p>
-                        <p class="mission-content content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae mollis turpis.
-                            <br>
-                            <br>
-                        Vivamus bibendum lacus turpis, vitae molestie sapien facilisis sit amet. Pellentesque consequat nunc ac tortor tincidunt sagittis.</p>
-                        <p class="vission-content content">Integer mollis nisi nec felis semper facilisis. Fusce a rutrum lectus, quis vestibulum erat. Sed ligula nisl, accumsan vitae orci et, facilisis condimentum dui.
-                            <br>
-                            <br>
-                            Aliquam ornare, lectus ut euismod molestie, ligula lorem scelerisque eros, ut pretium arcu ligula et nunc..</p>
-                    </div>
-                </div>
+      <div class="about_content">
+        <img
+          src="images/main_image_card.png"
+          alt="Main Page Card"
+          id="main_page_img"
+        />
+        <div class="about_info">
+          <div class="about_paragraph">
+            <p id="about_us_txt">About Us</p>
+            <h1>We Help Our Clients To Grow Their Business</h1>
+            <p id="about_main_txt">
+              Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
+              diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet
+              lorem sit clita duo justo magna dolore erat amet
+            </p>
+          </div>
+          <div class="active_paragraphs">
+            <div class="active_buttons">
+              <button
+                id="story"
+                class="nav-button active"
+                onclick="setActive('story')"
+              >
+                Story
+              </button>
+              <button
+                id="mission"
+                class="nav-button"
+                onclick="setActive('mission')"
+              >
+                Mission
+              </button>
+              <button
+                id="vission"
+                class="nav-button"
+                onclick="setActive('vission')"
+              >
+                Vission
+              </button>
+              <p class="story-content content">
+                Tempor erat elitr rebum at clita. Diam dolor diam ipsum et
+                tempor sit. Aliqu diam amet diam et eos labore.
+                <br />
+                <br />
+                Diam dolor diam ipsum et tempor sit. liqu diam amet diam et eos
+                labore. Clita erat ipsum et lorem et sit
+              </p>
+              <p class="mission-content content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+                vitae mollis turpis.
+                <br />
+                <br />
+                Vivamus bibendum lacus turpis, vitae molestie sapien facilisis
+                sit amet. Pellentesque consequat nunc ac tortor tincidunt
+                sagittis.
+              </p>
+              <p class="vission-content content">
+                Integer mollis nisi nec felis semper facilisis. Fusce a rutrum
+                lectus, quis vestibulum erat. Sed ligula nisl, accumsan vitae
+                orci et, facilisis condimentum dui.
+                <br />
+                <br />
+                Aliquam ornare, lectus ut euismod molestie, ligula lorem
+                scelerisque eros, ut pretium arcu ligula et nunc..
+              </p>
             </div>
+          </div>
         </div>
+      </div>
+      <div class="service_items">
+        <div class="first_item">
+          <div class="item_img">
+            <img
+              src="images/no_hidden_cost_img.png"
+              alt="No Hidden Cost Image"
+            />
+          </div>
+          <div class="item_content">
+            <h3>No Hidden Cost</h3>
+            <p>Clita erat ipsum lorem sit sed stet duo justo</p>
+          </div>
+        </div>
+        <div class="second_item">
+          <div class="item_img">
+            <img
+              src="images/dedicated_team_img.png"
+              alt="Dedicated Team Image"
+            />
+          </div>
+          <div class="item_content">
+            <h3>Dedicated Team</h3>
+            <p>Clita erat ipsum lorem sit sed stet duo justo</p>
+          </div>
+        </div>
+        <div class="third_item">
+          <div class="item_img">
+            <img
+              src="images/24_7_avaliable_img.png"
+              alt="24/7 Avaliable Image"
+            />
+          </div>
+          <div class="item_content">
+            <h3>24/7 Avaliable</h3>
+            <p>Clita erat ipsum lorem sit sed stet duo justo</p>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
     </main>
     <footer></footer>
-</body>
+  </body>
 </html>

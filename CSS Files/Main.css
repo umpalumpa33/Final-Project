@@ -107,3 +107,46 @@ main {
     line-height: 1.5rem; /* 150% */
     margin-top: 2vh;
 }
+
+.service_items {
+  display: flex;
+  flex-direction: row;
+  border-radius: 1.5625rem;
+  border: 1px solid #909DE2;
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.14);
+  padding: 1.25rem;
+  gap: 1.25rem;
+  justify-content: space-between;
+}
+
+.service_items h3 {
+  color: #011A41;
+  font-family: Jost;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.8125rem
+}
+
+.service_items p {
+  color:  #555;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+
+.first_item, .second_item, .third_item {
+  display: flex;
+  flex-direction: row;
+}
+
+.item_content {
+  margin-left: 0.6rem;
+}
+
+.item_content p {
+  margin-top: 1rem;
+}
+
