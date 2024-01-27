@@ -9,6 +9,7 @@ main {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-top: 7vh;
 }
 
 .about_info {
@@ -407,5 +408,191 @@ main {
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
+  line-height: 1.5rem; /* 150% */
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10vh;
+}
+
+.our_service {
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+  padding: 0.625rem 0.9375rem;
+  gap: 0.625rem;
+  border-radius: 0.6875rem;
+  border: 1px solid #cad2fc;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.36);
+}
+
+.our_service p {
+  color: var(--main-color, #355efc);
+  font-family: "Open Sans";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.service_header {
+  margin-top: 2vh;
+}
+.service_header h1 {
+  color: var(--Heading-color, #011a41);
+  text-align: center;
+  font-family: Jost;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.625rem; /* 120.833% */
+}
+
+.service_description {
+  display: flex;
+  flex-direction: row;
+  margin-top: 4vh;
+  gap: 2vw;
+}
+
+.financial_planing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.1875rem;
+  flex-shrink: 0;
+}
+
+.first_planing,
+.second_planing,
+.third_planing,
+.fourth_planing {
+  display: flex;
+  padding: 1.25rem;
+  justify-content: left;
+
+  align-items: center;
+  gap: 0.9375rem;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+
+.first_planing {
+  border-radius: 0.625rem;
+  background: var(--main-color, #355efc);
+}
+
+.first_planing p {
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5rem; /* 120% */
+}
+
+.second_planing,
+.third_planing,
+.fourth_planing {
+  display: flex;
+  padding: 1.25rem;
+  align-items: center;
+  gap: 0.9375rem;
+  flex: 1 0 0;
+  align-self: stretch;
+  border-radius: 0.625rem;
+  border: 1px solid var(--Icon-background, #909de2);
+}
+
+.second_planing p,
+.third_planing p,
+.fourth_planing p {
+  color: var(--Heading-color, #011a41);
+  font-family: "Open Sans";
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5rem; /* 120% */
+}
+
+.img_of_services,
+.financial_planing,
+.services_information {
+  flex: 1;
+}
+
+.img_of_services {
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+#services_image_id {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.3125rem;
+}
+
+.services_information {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-shrink: 0;
+}
+
+.services_information h1 {
+  color: var(--Heading-color, #011a41);
+  font-family: Jost;
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.125rem; /* 121.429% */
+}
+
+.services_information p {
+  color: var(--small-text-color, #555);
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem; /* 150% */
+}
+
+.benefits_of_service {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.0625rem;
+}
+
+.first_benefit,
+.second_benefit,
+.third_benefit {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  align-self: stretch;
+}
+
+#read_more_button {
+  display: flex;
+  padding: 0.625rem 1.5625rem;
+  align-items: flex-start;
+  gap: 0.625rem;
+  border-radius: 0.625rem;
+  background: var(--main-color, #355efc);
+  border: none;
+}
+
+#read_more_span {
+  color: #f5f5f5;
+  font-family: "Open Sans";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
   line-height: 1.5rem; /* 150% */
 }
