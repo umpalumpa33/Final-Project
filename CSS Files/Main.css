@@ -17,12 +17,6 @@ main {
   max-width: 34.3vw;
 }
 
-@media (max-width: 1266px) {
-  .about_content {
-    flex-direction: column;
-  }
-}
-
 .about_paragraph {
   display: flex;
   flex-direction: column;
@@ -124,6 +118,7 @@ main {
   gap: 1.25rem;
   justify-content: space-between;
   margin-top: 2vh;
+  width: 100%;
 }
 
 .service_items h3 {
@@ -142,6 +137,23 @@ main {
   font-style: normal;
   font-weight: 500;
   line-height: 1.5rem;
+}
+
+#main_page_img,
+#slider_img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1266px) {
+  .about_content {
+    flex-direction: column;
+    margin-top: 10vh;
+  }
+
+  .active_paragraphs {
+    width: 150%;
+  }
 }
 
 .first_item,
