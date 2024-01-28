@@ -5,11 +5,15 @@
 }
 
 body {
-  max-width: 88.3%;
-  margin: 0 auto;
+  width: 100%;
   background-image: url("/FinalProject/images/header_background.png");
   background-repeat: no-repeat;
   overflow-x: hidden;
+}
+
+.content_wrapper {
+  width: 88.3%;
+  margin: 0 auto;
 }
 
 header {

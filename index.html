@@ -6,6 +6,7 @@
     <title>Final Project</title>
     <link rel="stylesheet" href="CSS Files/Header.css" alt="Header CSS" />
     <link rel="stylesheet" href="CSS Files/Main.css" />
+    <link rel="stylesheet" href="CSS Files/Footer.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,244 +29,290 @@
   </head>
   <body>
     <header>
-      <div class="header_top_info">
-        <div class="left_info">
-          <div class="header_location">
-            <img src="images/location_img.png" alt="Location Icon" />
-            <p>123 Street, New York, USA</p>
-          </div>
-          <div class="header_time">
-            <img src="images/time_img.png" alt="Clock Icon" />
-            <p>9.00 am - 9.00 pm</p>
-          </div>
-        </div>
-        <div class="right_info">
-          <div class="header_email">
-            <img src="images/email_img.png" id="email_icon" alt="Email Icon" />
-            <p>info@example.com</p>
-          </div>
-          <div class="header_phone">
-            <img src="images/phone_img.png" alt="Phone Icon" />
-            <p>+012 345 6789</p>
-          </div>
-        </div>
-      </div>
-      <div class="header_navigation">
-        <h1 id="name_of_company">Finanza</h1>
-        <div class="navigation">
-          <div class="a_links">
-            <a href="">Home</a>
-            <a href="">About</a>
-            <a href="">Services</a>
-            <div class="pages_list">
-              <a href="">Pages</a>
-              <img src="images/arrow_img.png" id="arrow" alt="Arrow Image" />
+      <div class="content_wrapper">
+        <div class="header_top_info">
+          <div class="left_info">
+            <div class="header_location">
+              <img src="images/location_img.png" alt="Location Icon" />
+              <p>123 Street, New York, USA</p>
             </div>
-            <a href="">Contact</a>
+            <div class="header_time">
+              <img src="images/time_img.png" alt="Clock Icon" />
+              <p>9.00 am - 9.00 pm</p>
+            </div>
           </div>
-          <div class="social_media">
-            <img src="images/facebook_logo.png" alt="Facebook Logo" />
-            <img src="images/twitter_logo.png" alt="Twitter Logo" />
-            <img src="images/linkedin_logo.png" alt="Linkedin Logo" />
+          <div class="right_info">
+            <div class="header_email">
+              <img
+                src="images/email_img.png"
+                id="email_icon"
+                alt="Email Icon"
+              />
+              <p>info@example.com</p>
+            </div>
+            <div class="header_phone">
+              <img src="images/phone_img.png" alt="Phone Icon" />
+              <p>+012 345 6789</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="header_main_content">
-        <button id="left_arrow">
-          <img
-            src="images/left_arrow.png"
-            onclick="changeImage(-1)"
-            alt="Left Arrow Image"
-          />
-        </button>
-        <div class="main_left_side">
-          <p id="welcome_text">Welcome to Finanza</p>
-          <h1>Your Financial Status Is Our Goal</h1>
-          <button id="header_btn" onclick="toggleModal()">explore more</button>
-          <p id="modal">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-            vitae mollis turpis. Vivamus bibendum lacus turpis, vitae molestie
-            sapien facilisis sit amet. Pellentesque consequat nunc ac tortor
-            tincidunt sagittis. Integer mollis nisi nec felis semper facilisis.
-            Fusce a rutrum lectus, quis vestibulum erat. Sed ligula nisl,
-            accumsan vitae orci et, facilisis condimentum dui. Aliquam ornare,
-            lectus ut euismod molestie, ligula lorem scelerisque eros, ut
-            pretium arcu ligula et nunc.
-          </p>
+        <div class="header_navigation">
+          <h1 id="name_of_company">Finanza</h1>
+          <div class="navigation">
+            <div class="a_links">
+              <a href="">Home</a>
+              <a href="">About</a>
+              <a href="">Services</a>
+              <div class="pages_list">
+                <a href="">Pages</a>
+                <img src="images/arrow_img.png" id="arrow" alt="Arrow Image" />
+              </div>
+              <a href="">Contact</a>
+            </div>
+            <div class="social_media">
+              <img src="images/facebook_logo.png" alt="Facebook Logo" />
+              <img src="images/twitter_logo.png" alt="Twitter Logo" />
+              <img src="images/linkedin_logo.png" alt="Linkedin Logo" />
+            </div>
+          </div>
         </div>
-        <div class="right_image">
-          <img
-            src="images/slider_first_image.png"
-            id="slider_img"
-            alt="Slider Image Card"
-          />
+        <div class="header_main_content">
+          <button id="left_arrow">
+            <img
+              src="images/left_arrow.png"
+              onclick="changeImage(-1)"
+              alt="Left Arrow Image"
+            />
+          </button>
+          <div class="main_left_side">
+            <p id="welcome_text">Welcome to Finanza</p>
+            <h1>Your Financial Status Is Our Goal</h1>
+            <button id="header_btn" onclick="toggleModal()">
+              explore more
+            </button>
+            <p id="modal">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+              vitae mollis turpis. Vivamus bibendum lacus turpis, vitae molestie
+              sapien facilisis sit amet. Pellentesque consequat nunc ac tortor
+              tincidunt sagittis. Integer mollis nisi nec felis semper
+              facilisis. Fusce a rutrum lectus, quis vestibulum erat. Sed ligula
+              nisl, accumsan vitae orci et, facilisis condimentum dui. Aliquam
+              ornare, lectus ut euismod molestie, ligula lorem scelerisque eros,
+              ut pretium arcu ligula et nunc.
+            </p>
+          </div>
+          <div class="right_image">
+            <img
+              src="images/slider_first_image.png"
+              id="slider_img"
+              alt="Slider Image Card"
+            />
+          </div>
+          <button id="right_arrow">
+            <img
+              src="images/right_arrow.png"
+              onclick="changeImage(1)"
+              alt="Right Arrow Image"
+            />
+          </button>
         </div>
-        <button id="right_arrow">
-          <img
-            src="images/right_arrow.png"
-            onclick="changeImage(1)"
-            alt="Right Arrow Image"
-          />
-        </button>
       </div>
     </header>
     <main>
-      <div class="about_content">
-        <img
-          src="images/main_image_card.png"
-          alt="Main Page Card"
-          id="main_page_img"
-        />
-        <div class="about_info">
-          <div class="about_paragraph">
-            <p id="about_us_txt">About Us</p>
-            <h1>We Help Our Clients To Grow Their Business</h1>
-            <p id="about_main_txt">
+      <div class="content_wrapper">
+        <div class="about_content">
+          <img
+            src="images/main_image_card.png"
+            alt="Main Page Card"
+            id="main_page_img"
+          />
+          <div class="about_info">
+            <div class="about_paragraph">
+              <p id="about_us_txt">About Us</p>
+              <h1>We Help Our Clients To Grow Their Business</h1>
+              <p id="about_main_txt">
+                Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
+                Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit,
+                sed stet lorem sit clita duo justo magna dolore erat amet
+              </p>
+            </div>
+            <div class="active_paragraphs">
+              <div class="active_buttons">
+                <button
+                  id="story"
+                  class="nav-button active"
+                  onclick="setActive('story')"
+                >
+                  Story
+                </button>
+                <button
+                  id="mission"
+                  class="nav-button"
+                  onclick="setActive('mission')"
+                >
+                  Mission
+                </button>
+                <button
+                  id="vission"
+                  class="nav-button"
+                  onclick="setActive('vission')"
+                >
+                  Vission
+                </button>
+                <p class="story-content content">
+                  Tempor erat elitr rebum at clita. Diam dolor diam ipsum et
+                  tempor sit. Aliqu diam amet diam et eos labore.
+                  <br />
+                  <br />
+                  Diam dolor diam ipsum et tempor sit. liqu diam amet diam et
+                  eos labore. Clita erat ipsum et lorem et sit
+                </p>
+                <p class="mission-content content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Quisque vitae mollis turpis.
+                  <br />
+                  <br />
+                  Vivamus bibendum lacus turpis, vitae molestie sapien facilisis
+                  sit amet. Pellentesque consequat nunc ac tortor tincidunt
+                  sagittis.
+                </p>
+                <p class="vission-content content">
+                  Integer mollis nisi nec felis semper facilisis. Fusce a rutrum
+                  lectus, quis vestibulum erat. Sed ligula nisl, accumsan vitae
+                  orci et, facilisis condimentum dui.
+                  <br />
+                  <br />
+                  Aliquam ornare, lectus ut euismod molestie, ligula lorem
+                  scelerisque eros, ut pretium arcu ligula et nunc..
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="service_items">
+          <div class="first_item">
+            <div class="item_img">
+              <img
+                src="images/no_hidden_cost_img.png"
+                alt="No Hidden Cost Image"
+              />
+            </div>
+            <div class="item_content">
+              <h3>No Hidden Cost</h3>
+              <p>Clita erat ipsum lorem sit sed stet duo justo</p>
+            </div>
+          </div>
+          <div class="second_item">
+            <div class="item_img">
+              <img
+                src="images/dedicated_team_img.png"
+                alt="Dedicated Team Image"
+              />
+            </div>
+            <div class="item_content">
+              <h3>Dedicated Team</h3>
+              <p>Clita erat ipsum lorem sit sed stet duo justo</p>
+            </div>
+          </div>
+          <div class="third_item">
+            <div class="item_img">
+              <img
+                src="images/24_7_avaliable_img.png"
+                alt="24/7 Avaliable Image"
+              />
+            </div>
+            <div class="item_content">
+              <h3>24/7 Avaliable</h3>
+              <p>Clita erat ipsum lorem sit sed stet duo justo</p>
+            </div>
+          </div>
+        </div>
+        <div class="statistics">
+          <div class="happy_clients">
+            <img src="images/happy_clients_img.png" alt="Happy Clients Image" />
+            <h1>1234</h1>
+            <p>Happy Clients</p>
+            <hr />
+          </div>
+          <div class="projects_completed">
+            <img
+              src="images/projects_completed_img.png"
+              alt="Projects Completed Image"
+            />
+            <h1>1234</h1>
+            <p>Projects Completed</p>
+            <hr />
+          </div>
+          <div class="dedicated_staff">
+            <img
+              src="images/dedicated_staff_img.png"
+              alt="Dedicated Staff Image"
+            />
+            <h1>1234</h1>
+            <p>Dedicated Staff</p>
+            <hr />
+          </div>
+          <div class="dedicated_staff_2">
+            <img
+              src="images/dedicated_staff_2_img.png"
+              alt="Dedicated Staff 2 Image"
+            />
+            <h1>1234</h1>
+            <p>Dedicated Staff</p>
+            <hr />
+          </div>
+        </div>
+        <div class="why_choosing_us">
+          <div class="reasons_of_choosing">
+            <p id="why_choosing_us_border">Why Choosing Us!</p>
+            <h1>Few Reasons Why People Choosing Us!</h1>
+            <p>
               Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
               diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet
               lorem sit clita duo justo magna dolore erat amet
             </p>
+            <button>explore more</button>
           </div>
-          <div class="active_paragraphs">
-            <div class="active_buttons">
-              <button
-                id="story"
-                class="nav-button active"
-                onclick="setActive('story')"
-              >
-                Story
-              </button>
-              <button
-                id="mission"
-                class="nav-button"
-                onclick="setActive('mission')"
-              >
-                Mission
-              </button>
-              <button
-                id="vission"
-                class="nav-button"
-                onclick="setActive('vission')"
-              >
-                Vission
-              </button>
-              <p class="story-content content">
-                Tempor erat elitr rebum at clita. Diam dolor diam ipsum et
-                tempor sit. Aliqu diam amet diam et eos labore.
-                <br />
-                <br />
-                Diam dolor diam ipsum et tempor sit. liqu diam amet diam et eos
-                labore. Clita erat ipsum et lorem et sit
-              </p>
-              <p class="mission-content content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-                vitae mollis turpis.
-                <br />
-                <br />
-                Vivamus bibendum lacus turpis, vitae molestie sapien facilisis
-                sit amet. Pellentesque consequat nunc ac tortor tincidunt
-                sagittis.
-              </p>
-              <p class="vission-content content">
-                Integer mollis nisi nec felis semper facilisis. Fusce a rutrum
-                lectus, quis vestibulum erat. Sed ligula nisl, accumsan vitae
-                orci et, facilisis condimentum dui.
-                <br />
-                <br />
-                Aliquam ornare, lectus ut euismod molestie, ligula lorem
-                scelerisque eros, ut pretium arcu ligula et nunc..
-              </p>
+          <div class="grid_of_choosing">
+            <div class="left_side_of_grid">
+              <div class="first_grid_of_left_side">
+                <img
+                  src="images/grid_vector_blue.png"
+                  alt="Blue Vector of Grid"
+                />
+                <h1>Fast Executions</h1>
+                <p>
+                  Clita erat ipsum et lorem et sit,sed stet lorem sit clita duo
+                  justo erat amet
+                </p>
+                <div class="read_more_a">
+                  <a href="">Read More </a>
+                  <img
+                    src="images/grid_arrow_blue.png"
+                    alt="Blue Arrow of Grid"
+                  />
+                </div>
+              </div>
+              <div class="second_grid_of_left_side">
+                <img
+                  src="images/white_vector_of_grid.png"
+                  alt="White Vector of Grid"
+                />
+                <h1>Fast Executions</h1>
+                <p>
+                  Clita erat ipsum et lorem et sit,sed stet lorem sit clita duo
+                  justo erat amet
+                </p>
+                <div class="read_more_a">
+                  <a href="">Read More </a>
+                  <img
+                    src="images/grid_arrow_white.png"
+                    alt="White Arrow of Grid"
+                  />
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="service_items">
-        <div class="first_item">
-          <div class="item_img">
-            <img
-              src="images/no_hidden_cost_img.png"
-              alt="No Hidden Cost Image"
-            />
-          </div>
-          <div class="item_content">
-            <h3>No Hidden Cost</h3>
-            <p>Clita erat ipsum lorem sit sed stet duo justo</p>
-          </div>
-        </div>
-        <div class="second_item">
-          <div class="item_img">
-            <img
-              src="images/dedicated_team_img.png"
-              alt="Dedicated Team Image"
-            />
-          </div>
-          <div class="item_content">
-            <h3>Dedicated Team</h3>
-            <p>Clita erat ipsum lorem sit sed stet duo justo</p>
-          </div>
-        </div>
-        <div class="third_item">
-          <div class="item_img">
-            <img
-              src="images/24_7_avaliable_img.png"
-              alt="24/7 Avaliable Image"
-            />
-          </div>
-          <div class="item_content">
-            <h3>24/7 Avaliable</h3>
-            <p>Clita erat ipsum lorem sit sed stet duo justo</p>
-          </div>
-        </div>
-      </div>
-      <div class="statistics">
-        <div class="happy_clients">
-          <img src="images/happy_clients_img.png" alt="Happy Clients Image" />
-          <h1>1234</h1>
-          <p>Happy Clients</p>
-          <hr />
-        </div>
-        <div class="projects_completed">
-          <img
-            src="images/projects_completed_img.png"
-            alt="Projects Completed Image"
-          />
-          <h1>1234</h1>
-          <p>Projects Completed</p>
-          <hr />
-        </div>
-        <div class="dedicated_staff">
-          <img
-            src="images/dedicated_staff_img.png"
-            alt="Dedicated Staff Image"
-          />
-          <h1>1234</h1>
-          <p>Dedicated Staff</p>
-          <hr />
-        </div>
-        <div class="dedicated_staff_2">
-          <img
-            src="images/dedicated_staff_2_img.png"
-            alt="Dedicated Staff 2 Image"
-          />
-          <h1>1234</h1>
-          <p>Dedicated Staff</p>
-          <hr />
-        </div>
-      </div>
-      <div class="why_choosing_us">
-        <div class="reasons_of_choosing">
-          <p id="why_choosing_us_border">Why Choosing Us!</p>
-          <h1>Few Reasons Why People Choosing Us!</h1>
-          <p>
-            Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
-            diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet
-            lorem sit clita duo justo magna dolore erat amet
-          </p>
-          <button>explore more</button>
-        </div>
-        <div class="grid_of_choosing">
-          <div class="left_side_of_grid">
-            <div class="first_grid_of_left_side">
+            <div class="righ_side_of_grid">
               <img
                 src="images/grid_vector_blue.png"
                 alt="Blue Vector of Grid"
@@ -283,111 +330,127 @@
                 />
               </div>
             </div>
-            <div class="second_grid_of_left_side">
-              <img
-                src="images/white_vector_of_grid.png"
-                alt="White Vector of Grid"
-              />
-              <h1>Fast Executions</h1>
-              <p>
-                Clita erat ipsum et lorem et sit,sed stet lorem sit clita duo
-                justo erat amet
-              </p>
-              <div class="read_more_a">
-                <a href="">Read More </a>
+          </div>
+        </div>
+        <div class="services">
+          <div class="our_service">
+            <p>Our Services</p>
+          </div>
+          <div class="service_header">
+            <h1>Awesome Financial Services For Business</h1>
+          </div>
+          <div class="service_description">
+            <div class="financial_planing">
+              <div class="first_planing">
                 <img
-                  src="images/grid_arrow_white.png"
-                  alt="White Arrow of Grid"
+                  src="images/financial_planing_white_img.png"
+                  alt="White Financial Planing Image"
                 />
+                <p>Financial Planing</p>
+              </div>
+              <div class="second_planing">
+                <img
+                  src="images/financial_planing_black_img.png"
+                  alt="Black Financial Planing Image"
+                />
+                <p>Financial Planing</p>
+              </div>
+              <div class="third_planing">
+                <img
+                  src="images/financial_planing_black_img.png"
+                  alt="Black Financial Planing Image"
+                />
+                <p>Financial Planing</p>
+              </div>
+              <div class="fourth_planing">
+                <img
+                  src="images/financial_planing_black_img.png"
+                  alt="Black Financial Planing Image"
+                />
+                <p>Financial Planing</p>
               </div>
             </div>
-          </div>
-          <div class="righ_side_of_grid">
-            <img src="images/grid_vector_blue.png" alt="Blue Vector of Grid" />
-            <h1>Fast Executions</h1>
-            <p>
-              Clita erat ipsum et lorem et sit,sed stet lorem sit clita duo
-              justo erat amet
-            </p>
-            <div class="read_more_a">
-              <a href="">Read More </a>
-              <img src="images/grid_arrow_blue.png" alt="Blue Arrow of Grid" />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="services">
-        <div class="our_service">
-          <p>Our Services</p>
-        </div>
-        <div class="service_header">
-          <h1>Awesome Financial Services For Business</h1>
-        </div>
-        <div class="service_description">
-          <div class="financial_planing">
-            <div class="first_planing">
+            <div class="img_of_services">
               <img
-                src="images/financial_planing_white_img.png"
-                alt="White Financial Planing Image"
+                src="images/services_image.png"
+                id="services_image_id"
+                alt="Image of Services Div"
               />
-              <p>Financial Planing</p>
             </div>
-            <div class="second_planing">
-              <img
-                src="images/financial_planing_black_img.png"
-                alt="Black Financial Planing Image"
-              />
-              <p>Financial Planing</p>
-            </div>
-            <div class="third_planing">
-              <img
-                src="images/financial_planing_black_img.png"
-                alt="Black Financial Planing Image"
-              />
-              <p>Financial Planing</p>
-            </div>
-            <div class="fourth_planing">
-              <img
-                src="images/financial_planing_black_img.png"
-                alt="Black Financial Planing Image"
-              />
-              <p>Financial Planing</p>
-            </div>
-          </div>
-          <div class="img_of_services">
-            <img
-              src="images/services_image.png"
-              id="services_image_id"
-              alt="Image of Services Div"
-            />
-          </div>
-          <div class="services_information">
-            <h1>25 Years Of Experience In Financial Support</h1>
-            <p>
-              Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
-              diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet
-            </p>
-            <div class="benefits_of_service">
-              <div class="first_benefit">
-                <img src="images/grid_vector_blue.png" alt="Blue Vector" />
-                <p>Secured Loans</p>
+            <div class="services_information">
+              <h1>25 Years Of Experience In Financial Support</h1>
+              <p>
+                Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
+                Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit,
+                sed stet
+              </p>
+              <div class="benefits_of_service">
+                <div class="first_benefit">
+                  <img src="images/grid_vector_blue.png" alt="Blue Vector" />
+                  <p>Secured Loans</p>
+                </div>
+                <div class="second_benefit">
+                  <img src="images/grid_vector_blue.png" alt="Blue Vector" />
+                  <p>Credit Facilities</p>
+                </div>
+                <div class="third_benefit">
+                  <img src="images/grid_vector_blue.png" alt="Blue Vector" />
+                  <p>Cash Advanced</p>
+                </div>
               </div>
-              <div class="second_benefit">
-                <img src="images/grid_vector_blue.png" alt="Blue Vector" />
-                <p>Credit Facilities</p>
-              </div>
-              <div class="third_benefit">
-                <img src="images/grid_vector_blue.png" alt="Blue Vector" />
-                <p>Cash Advanced</p>
-              </div>
+              <button id="read_more_button">
+                <span id="read_more_span">Read More</span>
+              </button>
             </div>
-            <button id="read_more_button">
-              <span id="read_more_span">Read More</span>
-            </button>
           </div>
         </div>
       </div>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="content_wrapper">
+        <div class="request_call_back">
+          <p>Get In Touch</p>
+          <h1>Request A Call-Back</h1>
+          <form action="/process-form" method="POST">
+            <div class="request_first_row">
+              <input
+                type="text"
+                name="Name"
+                placeholder="Your Name"
+                id="nameInput"
+              />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                id="emailInput"
+              />
+            </div>
+            <div class="request_second_row">
+              <input
+                type="number"
+                name="Phone"
+                placeholder="Your Phone"
+                id="phoneInput"
+              />
+              <input
+                type="text"
+                name="Subject"
+                placeholder="Your Subject"
+                id="subjectInput"
+              />
+            </div>
+            <textarea
+              id="messageInput"
+              name="message"
+              placeholder="Message"
+              rows="4"
+              required
+            ></textarea>
+            <button>submit Now</button>
+          </form>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
