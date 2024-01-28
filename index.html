@@ -411,19 +411,21 @@
         <div class="request_call_back">
           <p>Get In Touch</p>
           <h1>Request A Call-Back</h1>
-          <form action="/process-form" method="POST">
+          <form action="/process-form" id="callbackform" method="POST">
             <div class="request_first_row">
               <input
                 type="text"
                 name="Name"
                 placeholder="Your Name"
                 id="nameInput"
+                required
               />
               <input
                 type="email"
                 name="Email"
                 placeholder="Your Email"
                 id="emailInput"
+                required
               />
             </div>
             <div class="request_second_row">
@@ -432,12 +434,14 @@
                 name="Phone"
                 placeholder="Your Phone"
                 id="phoneInput"
+                required
               />
               <input
                 type="text"
                 name="Subject"
                 placeholder="Your Subject"
                 id="subjectInput"
+                required
               />
             </div>
             <textarea
@@ -447,7 +451,7 @@
               rows="4"
               required
             ></textarea>
-            <button>submit Now</button>
+            <button type="submit" value="Submit">submit Now</button>
           </form>
         </div>
       </div>
