@@ -596,3 +596,21 @@ main {
   font-weight: 700;
   line-height: 1.5rem; /* 150% */
 }
+
+@media (max-width: 1025px) {
+  #main_page_img {
+    max-width: 500px;
+  }
+  .about_info {
+    justify-content: center;
+    align-items: center;
+  }
+  .about_paragraph {
+    text-align: center;
+    align-items: center;
+  }
+
+  .active_paragraphs {
+    text-align: center;
+  }
+}
