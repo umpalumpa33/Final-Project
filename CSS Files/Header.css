@@ -94,7 +94,8 @@ header {
   justify-content: space-between;
   text-align: center;
   align-items: center;
-  width: 49vw;
+  max-width: 49vw;
+  flex: 1;
 }
 
 #name_of_company {
@@ -266,6 +267,17 @@ header {
   #right_arrow {
     max-width: 50px;
     padding-right: 3rem;
+  }
+
+  .navigation {
+    gap: 5vw;
+  }
+
+  .pages_list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1vw;
   }
 }
 
