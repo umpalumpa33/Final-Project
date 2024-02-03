@@ -81,6 +81,7 @@ input::-webkit-inner-spin-button {
 #subjectInput {
   display: flex;
   height: fit-content;
+  width: 50%;
   padding: 0.9375rem 0.0625rem 0.9375rem 0.625rem;
   align-items: center;
   gap: 0.625rem;
@@ -366,22 +367,75 @@ button:hover {
   flex-shrink: 0;
 }
 
-@media screen and (max-width: 768px) {
-  #input_button {
-    margin-left: 0;
-  }
-}
-
 @media (max-width: 1025px) {
   #input_button {
     margin-left: -35%;
     padding: 4%;
     font-size: small;
   }
+
+  html {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 769px) {
   .content_wrapper {
-    width: 100%;
+    width: 88.3%;
+  }
+
+  #input_button {
+    margin-left: -40%;
+    padding: 4%;
+    font-size: small;
+  }
+
+  html {
+    font-size: 12px;
+  }
+
+  html::placeholder {
+    font: 12px;
+  }
+}
+
+@media (max-width: 426px) {
+  html {
+    font-size: 8px;
+  }
+
+  ::placeholder {
+    font-size: 8px;
+  }
+
+  #input_button {
+    margin-left: -40%;
+    padding: 4%;
+    font-size: 8px;
+  }
+
+  html img {
+    width: 26.5625%;
+    height: auto;
+  }
+
+  .our_office {
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footer_socials {
+    justify-content: center;
+  }
+
+  .footer_phone,
+  .footer_location,
+  .footer_email {
+    flex-direction: column;
+  }
+
+  .footer_services img,
+  .quick_links img {
+    width: 10%;
   }
 }

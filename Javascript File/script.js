@@ -33,18 +33,24 @@ function setActive(button) {
 
 function toggleModal() {
   var button = document.getElementById("header_btn");
+  var closeButton = document.getElementById("modal_close");
   var modal = document.getElementById("modal");
 
-  if (modal.style.display === "none" || modal.style.display === "") {
+  if (
+    modal.style.display === "none" ||
+    (modal.style.display === "" && closeButton.style.display === "none") ||
+    closeButton.style.display === ""
+  ) {
     var buttonRect = button.getBoundingClientRect();
     var modalWidth = modal.clientWidth;
 
     modal.style.top = buttonRect.bottom + window.scrollY + "px";
     modal.style.left = buttonRect.right + window.scrollX - modalWidth + "px";
-
     modal.style.display = "block";
+    closeButton.style.display = "block";
   } else {
     modal.style.display = "none";
+    closeButton.style.display = "none";
   }
 }
 

@@ -1,7 +1,6 @@
 main {
   display: flex;
   flex-direction: column;
-  margin-top: 10vh;
 }
 
 .about_content {
@@ -9,7 +8,6 @@ main {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-top: 7vh;
 }
 
 .about_info {
@@ -612,5 +610,9 @@ main {
 
   .active_paragraphs {
     text-align: center;
+  }
+
+  .service_items h3 {
+    width: 50%;
   }
 }

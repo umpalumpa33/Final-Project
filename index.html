@@ -57,6 +57,11 @@
         </div>
         <div class="header_navigation">
           <h1 id="name_of_company">Finanza</h1>
+          <img
+            src="images/blue_menu.png"
+            alt="Blue Menu Icon"
+            id="blue_menu_img"
+          />
           <div class="navigation">
             <div class="a_links">
               <a href="">Home</a>
@@ -85,16 +90,22 @@
             <button id="header_btn" onclick="toggleModal()">
               explore more
             </button>
-            <p id="modal">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-              vitae mollis turpis. Vivamus bibendum lacus turpis, vitae molestie
-              sapien facilisis sit amet. Pellentesque consequat nunc ac tortor
-              tincidunt sagittis. Integer mollis nisi nec felis semper
-              facilisis. Fusce a rutrum lectus, quis vestibulum erat. Sed ligula
-              nisl, accumsan vitae orci et, facilisis condimentum dui. Aliquam
-              ornare, lectus ut euismod molestie, ligula lorem scelerisque eros,
-              ut pretium arcu ligula et nunc.
-            </p>
+            <div class="modal_container">
+              <button id="modal_close" onclick="toggleModal()">X</button>
+              <div class="modal_content">
+                <p id="modal">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Quisque vitae mollis turpis. Vivamus bibendum lacus turpis,
+                  vitae molestie sapien facilisis sit amet. Pellentesque
+                  consequat nunc ac tortor tincidunt sagittis. Integer mollis
+                  nisi nec felis semper facilisis. Fusce a rutrum lectus, quis
+                  vestibulum erat. Sed ligula nisl, accumsan vitae orci et,
+                  facilisis condimentum dui. Aliquam ornare, lectus ut euismod
+                  molestie, ligula lorem scelerisque eros, ut pretium arcu
+                  ligula et nunc.
+                </p>
+              </div>
+            </div>
           </div>
           <div class="right_image">
             <img
@@ -402,7 +413,7 @@
         <div class="request_call_back">
           <p>Get In Touch</p>
           <h1>Request A Call-Back</h1>
-          <form" id="callbackform">
+          <form id="callbackform">
             <div class="request_first_row">
               <input
                 type="text"
@@ -442,7 +453,12 @@
               rows="4"
               required
             ></textarea>
-            <button type="submit" id="submitButton" onclick="checkRequest()" value="Submit">
+            <button
+              type="submit"
+              id="submitButton"
+              onclick="checkRequest()"
+              value="Submit"
+            >
               submit Now
             </button>
           </form>

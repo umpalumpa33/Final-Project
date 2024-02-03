@@ -46,6 +46,16 @@ header {
   height: 14px;
 }
 
+#blue_menu_img {
+  display: none;
+  height: 30px;
+  width: auto;
+}
+
+#blue_menu_img:hover {
+  cursor: pointer;
+}
+
 #email_icon {
   height: 19px;
 }
@@ -86,6 +96,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   margin-top: 2rem;
+  align-items: center;
 }
 
 .navigation {
@@ -179,6 +190,20 @@ header {
   border: 1px solid #fff;
 }
 
+#modal_close {
+  display: none;
+  position: absolute;
+  color: black;
+  text-align: right;
+  justify-content: right;
+  z-index: 1;
+  left: 62.5%;
+  background-color: transparent;
+  border: none;
+  color: #355efc;
+  font-size: 2rem;
+}
+
 #modal {
   display: none;
   position: absolute;
@@ -186,7 +211,6 @@ header {
   background-color: #fff;
   border: 1px solid #ddd;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  z-index: 1;
   max-width: 50vw;
   align-self: stretch;
   color: #555;
@@ -203,8 +227,8 @@ header {
   font-family: "Open Sans";
   font-size: 5rem;
   font-weight: 700;
-  line-height: 6rem; /* 120% */
-  max-width: 45rem;
+  line-height: 6rem;
+  width: 45vw;
 }
 
 #header_btn {
@@ -231,12 +255,14 @@ header {
 
 #left_arrow {
   position: absolute;
-  left: 0;
   padding: 0.9375rem 2.1875rem;
   border-radius: 0rem 3.125rem 3.125rem 0rem;
-  background: #cad2fc;
   justify-content: center;
   align-items: center;
+  left: 0;
+
+  background: #cad2fc;
+
   border: none;
 }
 
@@ -285,5 +311,78 @@ header {
   body {
     margin: 0 auto;
     justify-content: center;
+  }
+
+  #left_arrow {
+    /* position: absolute;
+    left: 0;
+    padding: 0.9375rem 2.1875rem;
+    border-radius: 0rem 3.125rem 3.125rem 0rem;
+    background: #cad2fc; 
+    border: none; */
+    padding: 0.45rem 1.05rem;
+    padding-left: 0.6rem;
+  }
+  #right_arrow {
+    /* position: absolute;
+    right: 0;
+      padding: 0.9375rem 2.1875rem;
+      border-radius: 3.125rem 0rem 0rem 3.125rem;
+      background: #cad2fc;
+      border: none; */
+    padding: 0.45rem 1.05rem;
+  }
+
+  #slider_img {
+    top: 25vh;
+    max-width: 307px;
+    max-height: 281px;
+  }
+}
+
+@media (max-width: 426px) {
+  .header_location,
+  .header_email,
+  .header_phone,
+  .header_time {
+    flex-direction: column !important;
+    gap: 1vh;
+  }
+
+  .navigation {
+    max-width: none;
+    gap: 2.5vw;
+    flex: none;
+  }
+
+  .a_links {
+    display: none;
+  }
+
+  #blue_menu_img {
+    display: block;
+    justify-content: right;
+    margin-left: auto;
+    margin-right: 5vw;
+  }
+
+  .main_left_side h1 {
+    z-index: 1;
+  }
+
+  #slider_img {
+    top: 25vh;
+  }
+
+  #main_page_img {
+    width: 45vw;
+  }
+
+  body {
+    background-size: 100%;
+  }
+
+  .header_navigation {
+    justify-content: space-between;
   }
 }
