@@ -13,7 +13,7 @@ main {
 .about_info {
   display: flex;
   flex-direction: column;
-  max-width: 34.3vw;
+  width: 50vw;
 }
 
 .about_paragraph {
@@ -614,5 +614,11 @@ main {
 
   .service_items h3 {
     width: 50%;
+  }
+}
+
+@media (max-width: 376px) {
+  .about_info {
+    width: 42vw;
   }
 }

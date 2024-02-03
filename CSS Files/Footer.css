@@ -318,7 +318,7 @@ button:hover {
   font-weight: 400;
   line-height: 150%;
   z-index: 2;
-  margin-left: -20%;
+  margin-left: -4.5vw;
 }
 
 .copyright_bar {
@@ -364,7 +364,6 @@ button:hover {
   padding: 0rem 0.25rem 0rem 0.3125rem;
   justify-content: center;
   align-items: center;
-  flex-shrink: 0;
 }
 
 @media (max-width: 1025px) {
@@ -437,5 +436,15 @@ button:hover {
   .footer_services img,
   .quick_links img {
     width: 10%;
+  }
+}
+
+@media (max-width: 376px) {
+  #slider_img {
+    top: 33vh;
+  }
+
+  #input_button {
+    margin-left: -45%;
   }
 }
