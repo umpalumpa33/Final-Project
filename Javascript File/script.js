@@ -23,12 +23,12 @@ function showImage(index) {
   imageElement.src = images[currentIndex - 1];
 }
 
-function setActive(button) {
+function setActive(activeButtonId) {
   document
-    .querySelectorAll(".nav-button")
-    .forEach((btn) => btn.classList.remove("active"));
+    .querySelectorAll(".nav_button")
+    .forEach((button) => button.classList.remove("active"));
 
-  document.getElementById(button).classList.add("active");
+  document.getElementById(activeButtonId).classList.add("active");
 }
 
 function toggleModal() {

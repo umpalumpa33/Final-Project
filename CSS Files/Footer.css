@@ -321,6 +321,11 @@ button:hover {
   margin-left: -4.5vw;
 }
 
+.footer_services p:hover,
+.quick_links p:hover {
+  cursor: pointer;
+}
+
 .copyright_bar {
   background: #000;
   width: 100%;
