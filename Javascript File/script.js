@@ -3,7 +3,7 @@ let currentIndex = 1;
 function changeImage(n) {
   currentIndex += n;
   showImage(currentIndex);
-}
+} // changing index of image selector
 
 function showImage(index) {
   const images = [
@@ -65,7 +65,7 @@ function checkRequest() {
   let phoneValue = phoneInput.value;
   let subjectValue = subjectInput.value;
   let messageValue = messageInput.value;
-  let index = true;
+  let phoneTrim = phoneValue.trim("");
 
   function emailCheck(content) {
     let pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -73,24 +73,27 @@ function checkRequest() {
   }
 
   function phoneCheck(content) {
-    let pattern = /^\+995/;
+    let pattern = /^\995/;
     return pattern.test(content);
   }
 
-  if (nameValue.trim() === "") {
+  if (
+    nameValue.trim() === "" &&
+    emailValue.trim() === "" &&
+    phoneValue.trim() === "" &&
+    subjectValue.trim() === "" &&
+    messageValue.trim() === ""
+  ) {
+    alert("Fill all the inputs!");
+  } else if (nameValue.trim() === "") {
     alert(`Name input is mandatory!`);
-    index = false;
   } else if (emailCheck(emailValue) == false) {
     alert(`The email must be in the correct format `);
-    index = false;
-  } else if (phoneCheck(phoneValue) && phoneValue.length != 13) {
-    alert(`Phone number should start with +995 and be 12 digits`); // ამაზე შეკითხვა არ დამავიწყდეს (phoneCheck(phoneValue) == false
-    index = false;
+  } else if (!phoneCheck(phoneValue) || phoneTrim.length !== 12) {
+    alert(`Phone number should start with +995 and be 12 digits`); // + არ აღიქვამს ვიტირე კინაღამ (მაგრამ console.log-ებით კარგად იტესტება რა არის შეცდომა)
   } else if (subjectValue.length < 5) {
     alert(`Subject should be more than 5 characters`);
-    index = false;
   } else if (messageValue.trim() === "") {
     alert(`Message is mandatory!`);
-    index = false;
   }
 }
