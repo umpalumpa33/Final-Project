@@ -197,7 +197,7 @@ header {
   text-align: right;
   justify-content: right;
   z-index: 1;
-  left: 62.5%;
+  left: 61vw;
   background-color: transparent;
   border: none;
   color: #355efc;
@@ -363,7 +363,7 @@ header {
     display: block;
     justify-content: right;
     margin-left: auto;
-    margin-right: 5vw;
+    margin-right: 2vw;
   }
 
   .main_left_side h1 {
@@ -384,5 +384,24 @@ header {
 
   .header_navigation {
     justify-content: space-between;
+  }
+}
+
+@media (max-width: 376px) {
+  .about_info {
+    width: 42vw;
+  }
+}
+
+@media (max-width: 321px) {
+  html {
+    font-size: 6px;
+  }
+  .about_info {
+    width: 50vw;
+  }
+
+  #slider_img {
+    top: 35vh;
   }
 }

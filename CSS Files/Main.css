@@ -616,9 +616,3 @@ main {
     width: 50%;
   }
 }
-
-@media (max-width: 376px) {
-  .about_info {
-    width: 42vw;
-  }
-}

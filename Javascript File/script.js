@@ -97,3 +97,22 @@ function checkRequest() {
     alert(`Message is mandatory!`);
   }
 }
+
+const menuButton = document.getElementById("blue_menu_img");
+menuButton.addEventListener("click", function createMenu() {
+  let aLinks = document.querySelector(".a_links");
+  let headerImage = document.getElementById("slider_img");
+  let imageStyle = window.getComputedStyle(headerImage);
+  let imageTop = imageStyle.top;
+  if (aLinks.style.display == "none" || aLinks.style.display == "") {
+    aLinks.style.display = "flex";
+    aLinks.style.flexDirection = "column";
+    aLinks.style.justifyContent = "right";
+    aLinks.style.width = "fit-content";
+    headerImage.style.top = imageTop + "7vh";
+  } else {
+    let updatedImageTop = window.getComputedStyle(headerImage);
+    aLinks.style.display = "none";
+    headerImage.style.top = updatedImageTop - "7vh";
+  }
+});
